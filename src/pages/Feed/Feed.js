@@ -31,7 +31,7 @@ class Feed extends Component {
   };
 
   componentDidMount() {
-    fetch(`http://localhost:8080/feed/status`, {
+    fetch(`https://postsmanager.herokuapp.com/feed/status`, {
       headers: {
         Authorization: `Bearer ${this.props.token}`,
         Name: `${this.props.name}`,

@@ -86,7 +86,7 @@ class App extends Component {
     event.preventDefault();
     this.setState({ authLoading: true });
     fetch(
-      'http://localhost:8080/auth/login',
+      'https://postsmanager.herokuapp.com/auth/login',
 
       {
         body: JSON.stringify({

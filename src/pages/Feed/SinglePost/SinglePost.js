@@ -23,7 +23,7 @@ class SinglePost extends Component {
   componentDidMount() {
     const postId = this.props.match.params.postId;
     fetch(
-      `http://localhost:8080/feed/post/${postId}`,
+      `https://postsmanager.herokuapp.com/feed/post/${postId}`,
 
       {
         headers: {
@@ -64,7 +64,7 @@ class SinglePost extends Component {
         <div className="single-post__image">
           <Image
             contain
-            imageUrl={`http://localhost:8080/${this.state.image}`}
+            imageUrl={`https://postsmanager.herokuapp.com/${this.state.image}`}
           />
         </div>
         <p>{this.state.content}</p>
