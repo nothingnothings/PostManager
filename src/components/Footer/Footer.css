@@ -1,0 +1,38 @@
+footer {
+  background-color: var(--dark-white);
+  margin-top: 2rem;
+}
+
+.brands {
+  flex-direction: column;
+  display: flex;
+}
+
+.brand-list {
+  left: 0;
+  margin-left: 55px;
+  align-self: flex-start;
+  display: flex;
+  list-style: none;
+  justify-content: flex-start;
+  gap: 30px;
+}
+
+.brand-list ul {
+  margin-right: 40px;
+}
+
+.footer-link {
+  text-decoration: none;
+  color: var(--grey);
+}
+
+p {
+  text-align: justify;
+  justify-content: center;
+  cursor: default;
+}
+
+.text-muted {
+  text-decoration: none;
+}

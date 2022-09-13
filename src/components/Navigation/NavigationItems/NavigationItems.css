@@ -1,0 +1,42 @@
+.navigation-item {
+  padding: 0 1.5rem;
+}
+
+.navigation-item a {
+  text-decoration: none;
+  color: var(--highlight-white);
+}
+
+.navigation-item.mobile {
+  font-size: 1.75rem;
+  margin: 0.5rem 0;
+}
+
+.navigation-item.mobile a {
+  color: var(--light-purple);
+}
+
+.navigation-item a:hover,
+.navigation-item a:active,
+.navigation-item a.active {
+  color: var(--highlight-yellow);
+  pointer-events: none;
+}
+
+.navigation-item:last-of-type {
+  padding-right: 0;
+}
+
+.navigation-item button {
+  font: inherit;
+  background: transparent;
+  border: none;
+  color: var(--highlight-white);
+  cursor: pointer;
+  padding: 0;
+}
+
+.navigation-item button:hover,
+.navigation-item button:active {
+  color: var(--highlight-yellow);
+}
