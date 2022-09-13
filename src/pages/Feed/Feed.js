@@ -69,7 +69,7 @@ class Feed extends Component {
       this.setState({ postPage: page});
     }
 
-    fetch(`http://localhost:8080/feed/posts?page=${page}`, {
+    fetch(`https://postsmanager.herokuapp.com/feed/posts?page=${page}`, {
       headers: {
         Authorization: `Bearer ${this.props.token}`,
         Name: `${this.props.name}`,
@@ -102,7 +102,7 @@ class Feed extends Component {
     event.preventDefault();
 
     fetch(
-      `http://localhost:8080/feed/status`,
+      `https://postsmanager.herokuapp.com/feed/status`,
 
       {
         method: 'POST',
@@ -160,11 +160,11 @@ class Feed extends Component {
     formData.append('image', postData.image);
     formData.append('name', this.props.name);
 
-    let url = 'http://localhost:8080/feed/post';
+    let url = 'https://postsmanager.herokuapp.com/feed/post';
     let method = 'POST';
 
     if (this.state.editPost) {
-      url = `http://localhost:8080/feed/post/${postData.id}`;
+      url = `https://postsmanager.herokuapp.com/feed/post/${postData.id}`;
       method = 'PUT';
     }
 
