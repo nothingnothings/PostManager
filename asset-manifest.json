@@ -1,15 +1,15 @@
 {
-  "main.css": "/PostManager/static/css/main.176757f9.chunk.css",
-  "main.js": "/PostManager/static/js/main.463b5c0c.chunk.js",
-  "main.js.map": "/PostManager/static/js/main.463b5c0c.chunk.js.map",
+  "main.css": "/PostManager/static/css/main.70af6f9f.chunk.css",
+  "main.js": "/PostManager/static/js/main.cf47fbe8.chunk.js",
+  "main.js.map": "/PostManager/static/js/main.cf47fbe8.chunk.js.map",
   "static/css/1.b0103ddb.chunk.css": "/PostManager/static/css/1.b0103ddb.chunk.css",
   "static/js/1.ab771bf3.chunk.js": "/PostManager/static/js/1.ab771bf3.chunk.js",
   "static/js/1.ab771bf3.chunk.js.map": "/PostManager/static/js/1.ab771bf3.chunk.js.map",
   "runtime~main.js": "/PostManager/static/js/runtime~main.720003f3.js",
   "runtime~main.js.map": "/PostManager/static/js/runtime~main.720003f3.js.map",
-  "static/css/main.176757f9.chunk.css.map": "/PostManager/static/css/main.176757f9.chunk.css.map",
+  "static/css/main.70af6f9f.chunk.css.map": "/PostManager/static/css/main.70af6f9f.chunk.css.map",
   "static/css/1.b0103ddb.chunk.css.map": "/PostManager/static/css/1.b0103ddb.chunk.css.map",
   "index.html": "/PostManager/index.html",
-  "precache-manifest.ab07db3d70f1839775f0cd66dc1d60da.js": "/PostManager/precache-manifest.ab07db3d70f1839775f0cd66dc1d60da.js",
+  "precache-manifest.d421f76937f5816361ccae6ad824029f.js": "/PostManager/precache-manifest.d421f76937f5816361ccae6ad824029f.js",
   "service-worker.js": "/PostManager/service-worker.js"
 }
