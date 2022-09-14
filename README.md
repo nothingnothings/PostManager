@@ -1,4 +1,6 @@
-![logo](/src/assets/images/HostCorps.png)
+![PostManager1](/snapshot/PostManager2.png)
+
+![PostManager2](/snapshot/PostManager1.png)
 
 # PostManager
 
