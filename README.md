@@ -10,8 +10,8 @@ The App was bootstrapped with create-react-app and deployed with gh-pages, assis
 
 Some of the Languages, Libraries and packages employed:
 
-- Node Package Manager (for Webpack and webpack-related packages)
-- HTML5
+- Node Package Manager (for bootstrapping and managing the React app)
+- HTML5 (JSX)
 - CSS3 (animations, Flexbox, media queries)
 - Vanilla JavaScript (no JavaScript frameworks; usage of `var`, normal functions and common eventListeners)
 - Form validation logic (basic input validation, logic for adding and removing "focus" and "invalid" styles, etc)
