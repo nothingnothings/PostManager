@@ -1,4 +1,5 @@
 ![PostManager1](/snapshot/PostManager2.png)
+<br>
 
 ![PostManager2](/snapshot/PostManager1.png)
 
