@@ -198,77 +198,47 @@ The create-react-app workflow's production output, as shown in the gh-pages bran
 
 ## Webpack and package.json Configuration Files
 
-The webpack.config.js file used in the project:
+The package.json file used in the project:
 
 ```
-const HtmlWebpackPlugin = require('html-webpack-plugin');
-
-const { CleanWebpackPlugin } = require('clean-webpack-plugin');
-const path = require('path');
-
-module.exports = {
-  entry: ['./src/js/index.js', './src/js/start-hosting.js'],
-
-  mode: 'production',
-  output: {
-    filename: 'bundle.js',
-    path: path.resolve(__dirname, 'dist'),
-    assetModuleFilename: (pathData) => {
-      const filePath = path
-        .dirname(pathData.filename)
-        .split('/')
-        .slice(1)
-        .join('/');
-      return `${filePath}/[name][ext]`;
-    },
+{
+  "name": "post-manager",
+  "version": "0.1.0",
+  "private": true,
+  "homepage": "https://nothingnothings.github.io/PostManager",
+  "dependencies": {
+    "@fortawesome/free-regular-svg-icons": "^6.1.1",
+    "@fortawesome/free-solid-svg-icons": "^6.1.1",
+    "@fortawesome/react-fontawesome": "^0.2.0",
+    "@types/react-fontawesome": "^1.6.5",
+    "bootstrap": "^5.1.3",
+    "react": "^16.5.2",
+    "react-bootstrap": "^2.4.0",
+    "react-dom": "^16.5.2",
+    "react-router-dom": "^4.3.1",
+    "react-scripts": "2.0.4",
+    "react-transition-group": "^4.4.2"
   },
-  resolve: {
-    extensions: ['.js'],
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
   },
-
-  module: {
-    rules: [
-      {
-        test: /\.css$/i,
-        use: ['style-loader', 'css-loader'],
-      },
-      {
-        test: /\.(woff|woff2|ttf|eot)$/,
-        type: 'asset/resource',
-      },
-
-      {
-        test: /\.(?:ico|gif|png|jpg|jpeg)$/i,
-        type: 'asset/resource',
-      },
-    ],
+  "eslintConfig": {
+    "extends": "react-app"
   },
-
-  plugins: [
-    new HtmlWebpackPlugin({
-      filename: 'index.html',
-      template: 'src/index.html',
-    }),
-    new HtmlWebpackPlugin({
-      filename: 'customers.html',
-      template: 'src/customers.html',
-    }),
-    new HtmlWebpackPlugin({
-      filename: 'packages.html',
-      template: 'src/packages.html',
-    }),
-    new HtmlWebpackPlugin({
-      filename: 'start-hosting.html',
-      template: 'src/start-hosting.html',
-    }),
-
-    new CleanWebpackPlugin(),
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
   ],
+  "devDependencies": {
+    "gh-pages": "^4.0.0"
+  }
+}
 
-  performance: {
-    hints: false,
-  },
-};
 
 ```
 
@@ -277,7 +247,10 @@ module.exports = {
 To use this project, clone it using Git:
 
 1. Run `git clone` to clone the project into your local Git repository
-2. Serve the files with the help of a hosting provider (frontend-only)
+2. Run `npm install` to install all dependencies (`react`, `axios`, etc)
+3. Run `npm run build` to create the production/deployment version of the app (outputted in `/build`)
+4. Serve the production files locally or on the web, with the help of a hosting provider (although great part of the app relies/depends on the backend's data, which in the case of this demo, is served by a Node.js (Express.js) server, hosted on Heroku)
+5. For the purposes of this demo, on the Home page, input the credentials `exemplo@exemplo.com` (email) and `exemplo` (password) to access the apps's functionalities (Post Viewing and Creation)
 
 ## Features
 
