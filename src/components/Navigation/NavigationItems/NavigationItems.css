@@ -31,7 +31,7 @@
   font: inherit;
   background: transparent;
   border: none;
-  color: var(--highlight-white);
+  color: var(--darkest);
   cursor: pointer;
   padding: 0;
 }
