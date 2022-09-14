@@ -270,4 +270,4 @@ To use this project, clone it using Git:
 
 ## Inspiration
 
-Inspired by the "JavaScript - The Complete Guide" course by Maximilian Schwarzmüller.
+Inspired by the "NodeJS - The Complete Guide (MVC, REST APIs, GraphQL, Deno)" and "React - The Complete Guide (incl Hooks, React Router, Redux)" courses by Maximilian Schwarzmüller.
