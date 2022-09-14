@@ -40,3 +40,10 @@
 .navigation-item button:active {
   color: var(--highlight-yellow);
 }
+
+
+@media (min-width: 768px) {
+  .navigation-item button {
+    color: var(--highlight-white);
+  }
+}
