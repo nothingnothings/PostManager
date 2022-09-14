@@ -21,6 +21,8 @@ Some of the Languages, Libraries and packages employed:
 - Responsive mobile design (sidebar, Flexbox, media queries)
 - Bootstrap (mainly the Footer component)
 - Font Awesome (Footer component's icons)
+- MongoDB (noSQL database storage solution; storage of `user` and `post` objects into collections in a remote MongoDB Atlas database)
+- Fetch API usage (for the JSON communication, requests and responses, between the frontend app and the Node.js/express.js backend targeted by it)
 
 ## Project Directory Structure
 
