@@ -23,6 +23,7 @@ Some of the Languages, Libraries and packages employed:
 - Font Awesome (Footer component's icons)
 - MongoDB (noSQL database storage solution; storage of `user` and `post` objects into collections in a remote MongoDB Atlas database)
 - Fetch API usage (for the JSON communication, requests and responses, between the frontend app and the Node.js/express.js backend targeted by it)
+- For the creation of the posts, `FormData()` and `FileReader()`; JavaScript APIs/Objects used to send multipart HTTP requests (strings/text and images) to the Node.js backend, where the JSON data is separated from the image data (files chosen by the user), before being handled appropriately
 
 ## Project Directory Structure
 
