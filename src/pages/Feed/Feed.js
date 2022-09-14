@@ -265,8 +265,8 @@ class Feed extends Component {
             </Button>
           </form>
           <p className="text-muted">
-            Obs: changes made to the items of this page only modify the app's
-            local state (no effect on the MongoDB database's data).
+            Obs: Updates/changes made to this input field only modify 
+           the app's local state (no effect on the MongoDB database's data), which is reset on every page reload.
           </p>
         </section>
         <section className="feed__control">
@@ -305,7 +305,7 @@ class Feed extends Component {
                     title={post.title}
                     image={post.imageUrl}
                     content={post.content}
-                    onStartEdit={this.startEditPostHandler.bind(this, post._id)}
+                   
                   />
                 ))}
               </Paginator>
