@@ -170,9 +170,7 @@ class Feed extends Component {
 
     fetch(url, {
       method: method,
-
       body: formData,
-
       headers: {
         Authorization: `Bearer ${this.props.token}`,
         Name: `${this.props.name}`,
