@@ -19,6 +19,8 @@ Some of the Languages, Libraries and packages employed:
 - ReactJS (JavaScript Library, app built entirely of React components; usage of "state" to manage form validation, etc.)
 - Form validation logic (state-based input validation, logic for adding and removing "touched" and "invalid" styles, etc.)
 - Responsive mobile design (sidebar, Flexbox, media queries)
+- Bootstrap (mainly the Footer component)
+- Font Awesome (Footer component's icons)
 
 ## Project Directory Structure
 
