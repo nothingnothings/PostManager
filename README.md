@@ -13,50 +13,150 @@ Some of the Languages, Libraries and packages employed:
 - Node Package Manager (for bootstrapping and managing the React app)
 - HTML5 (JSX)
 - CSS3 (animations, Flexbox, media queries)
-- Vanilla JavaScript (no JavaScript frameworks; usage of `var`, normal functions and common eventListeners)
-- Form validation logic (basic input validation, logic for adding and removing "focus" and "invalid" styles, etc)
+- ReactJS (JavaScript Library, app built entirely of React components; usage of "state" to manage form validation, etc.)
+- Form validation logic (state-based input validation, logic for adding and removing "touched" and "invalid" styles, etc.)
 - Responsive mobile design (sidebar, Flexbox, media queries)
 
 ## Project Directory Structure
 
-The development environment (with the use of a Webpack workflow), as seen in the `master` branch:
+The development environment (with the use of the `create-react-app` tool/workflow):, as seen in the `master` branch:
 
 ```
-.
+.\
 │
-├── assets\
+├── public\
+│   ├── 404.html
+│   ├── android-chrome-192x192.png
+│   ├── android-chrome-512x512.png
+│   ├── apple-touch-icon.png
+│   ├── favicon-16x16.png
+│   ├── favicon-32x32.png
+│   ├── favicon.ico
+│   ├── index.html
+│   └── manifest.json
+│
+├── src\
 │   │
-│   ├── css\
-│   │   ├── common.css
-│   │   ├── customers.css
-│   │   ├── index.css
-│   │   ├── packages.css
-│   │   └── start-hosting.css
+│   ├── components\
+│   │   │
+│   │   ├── Backdrop\
+│   │   │   ├── Backdrop.css
+│   │   │   └── Backdrop.js
+│   │   │
+│   │   ├── Button\
+│   │   │   ├── Button.css
+│   │   │   └── Button.js
+│   │   │
+│   │   ├── ErrorHandler\
+│   │   │   └── ErrorHandler.js
+│   │   │
+│   │   ├── Feed\
+│   │   │   │
+│   │   │   └── Post\
+│   │   │       ├── Post.css
+│   │   │       └── Post.js
+│   │   │
+│   │   │
+│   │   ├── Footer\
+│   │   │   ├── Footer.css
+│   │   │   └── Footer.js
+│   │   │
+│   │   ├── Form\
+│   │   │   │
+│   │   │   └── Input\
+│   │   │       ├── FilePicker.js
+│   │   │       ├── Input.css
+│   │   │       └── Input.js
+│   │   │
+│   │   │
+│   │   ├── Image\
+│   │   │   ├── Avatar.css
+│   │   │   ├── Avatar.js
+│   │   │   ├── Image.css
+│   │   │   └── Image.js
+│   │   │
+│   │   ├── Layout\
+│   │   │   ├── Layout.css
+│   │   │   └── Layout.js
+│   │   │
+│   │   ├── Loader\
+│   │   │   ├── Loader.css
+│   │   │   └── Loader.js
+│   │   │
+│   │   ├── Logo\
+│   │   │   ├── Logo.css
+│   │   │   └── Logo.js
+│   │   │
+│   │   ├── Modal\
+│   │   │   ├── Modal.css
+│   │   │   └── Modal.js
+│   │   │
+│   │   ├── Navigation\
+│   │   │   │
+│   │   │   ├── MainNavigation\
+│   │   │   │   ├── MainNavigation.css
+│   │   │   │   └── MainNavigation.js
+│   │   │   │
+│   │   │   ├── MobileNavigation\
+│   │   │   │   ├── MobileNavigation.css
+│   │   │   │   └── MobileNavigation.js
+│   │   │   │
+│   │   │   ├── MobileToggle\
+│   │   │   │   ├── MobileToggle.css
+│   │   │   │   └── MobileToggle.js
+│   │   │   │
+│   │   │   └── NavigationItems\
+│   │   │       ├── NavigationItems.css
+│   │   │       └── NavigationItems.js
+│   │   │
+│   │   │
+│   │   ├── Paginator\
+│   │   │   ├── Paginator.css
+│   │   │   └── Paginator.js
+│   │   │
+│   │   ├── SinglePostPaginator\
+│   │   │   ├── SinglePostPaginator.css
+│   │   │   └── SinglePostPaginator.js
+│   │   │
+│   │   └── Toolbar\
+│   │       ├── Toolbar.css
+│   │       └── Toolbar.js
 │   │
-│   ├── fonts\
-│   │   ├── UniSansHeavyCAPS.woff
-│   │   ├── UniSansHeavyCAPS.woff2
-│   │   ├── anonymousPro-Bold.ttf
-│   │   └── anonymousPro-Regular.ttf
 │   │
-│   └── images\
-│       ├── HostCorps.png
-│       ├── HostCorps.svg
-│       ├── customer-1.jpg
-│       ├── customer-2.jpg
-│       ├── customer-3.jpg
-│       ├── freedom.jpg
-│       └── plan.jpg
+│   ├── pages\
+│   │   │
+│   │   ├── Auth\
+│   │   │   ├── Auth.css
+│   │   │   ├── Auth.js
+│   │   │   ├── Login.css
+│   │   │   └── Login.js
+│   │   │
+│   │   └── Feed\
+│   │       │
+│   │       ├── FeedEdit\
+│   │       │   ├── FeedEdit.css
+│   │       │   └── FeedEdit.js
+│   │       │
+│   │       ├── SinglePost\
+│   │       │   ├── SinglePost.css
+│   │       │   └── SinglePost.js
+│   │       │
+│   │       ├── Feed.css
+│   │       └── Feed.js
+│   │
+│   │
+│   ├── util\
+│   │   ├── image.js
+│   │   └── validators.js
+│   │
+│   ├── App.css
+│   ├── App.js
+│   ├── index.css
+│   └── index.js
 │
-│
-├── js\
-│   ├── index.js
-│   └── start-hosting.js
-│
-├── customers.html
-├── index.html
-├── packages.html
-└── start-hosting.html
+├── .gitignore
+├── package-lock.json
+└── package.json
 ```
 
 The Webpack workflow's production output, as shown in the `gh-pages` branch (tasked with the deployment of the app):
