@@ -1,7 +1,7 @@
 {
   "main.css": "/PostManager/static/css/main.176757f9.chunk.css",
-  "main.js": "/PostManager/static/js/main.aded86df.chunk.js",
-  "main.js.map": "/PostManager/static/js/main.aded86df.chunk.js.map",
+  "main.js": "/PostManager/static/js/main.8ad88ea1.chunk.js",
+  "main.js.map": "/PostManager/static/js/main.8ad88ea1.chunk.js.map",
   "static/css/1.b0103ddb.chunk.css": "/PostManager/static/css/1.b0103ddb.chunk.css",
   "static/js/1.ab771bf3.chunk.js": "/PostManager/static/js/1.ab771bf3.chunk.js",
   "static/js/1.ab771bf3.chunk.js.map": "/PostManager/static/js/1.ab771bf3.chunk.js.map",
@@ -10,6 +10,6 @@
   "static/css/main.176757f9.chunk.css.map": "/PostManager/static/css/main.176757f9.chunk.css.map",
   "static/css/1.b0103ddb.chunk.css.map": "/PostManager/static/css/1.b0103ddb.chunk.css.map",
   "index.html": "/PostManager/index.html",
-  "precache-manifest.d6b3855f7a0a8357221b3de7ac352de5.js": "/PostManager/precache-manifest.d6b3855f7a0a8357221b3de7ac352de5.js",
+  "precache-manifest.b9da06879698db9688cbb05c98f3fb50.js": "/PostManager/precache-manifest.b9da06879698db9688cbb05c98f3fb50.js",
   "service-worker.js": "/PostManager/service-worker.js"
 }
