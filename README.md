@@ -6,8 +6,9 @@
 # PostManager
 
 Simple ReactJS app with authentication and post creation logic, connected to a Node.js (Express.js) backend, helped by a MongoDB database and hosted on the Heroku platform.
+The webApp can be acessed [here](https://nothingnothings.github.io/HostCorps). 
 
-The App was bootstrapped with create-react-app and deployed with gh-pages, assisted by the GitHub Actions feature.
+The app was bootstrapped with create-react-app and deployed with gh-pages, assisted by the GitHub Actions feature.
 
 ## Technologies
 
