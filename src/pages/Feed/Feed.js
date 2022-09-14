@@ -119,7 +119,7 @@ class Feed extends Component {
     )
       .then((res) => {
         if (res.status !== 200 && res.status !== 201) {
-          throw new Error("Can't update status in this demo version of the app!");
+          throw new Error("Can't update user's status (in the database) in this demo version of the app!");
         }
         return res.json();
       })
