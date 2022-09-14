@@ -1,4 +1,7 @@
-![logo](/src/assets/images/HostCorps.png)
+![PostManager1](/snapshot/PostManager2.png)
+<hr>
+
+![PostManager2](/snapshot/PostManager1.png)
 
 # PostManager
 
@@ -16,6 +19,11 @@ Some of the Languages, Libraries and packages employed:
 - ReactJS (JavaScript Library, app built entirely of React components; usage of "state" to manage form validation, etc.)
 - Form validation logic (state-based input validation, logic for adding and removing "touched" and "invalid" styles, etc.)
 - Responsive mobile design (sidebar, Flexbox, media queries)
+- Bootstrap (mainly the Footer component)
+- Font Awesome (Footer component's icons)
+- MongoDB (noSQL database storage solution; storage of `user` and `post` objects into collections in a remote MongoDB Atlas database)
+- Fetch API usage (for the JSON communication, requests and responses, between the frontend app and the Node.js/express.js backend targeted by it)
+- For the sending of the data of the posts to the backend, `FormData()` and `FileReader()`; JavaScript APIs/Objects used to send multipart HTTP requests (strings/text and images) to the Node.js backend, where the JSON data is separated from the image data (files chosen by the user), before being handled appropriately
 
 ## Project Directory Structure
 
@@ -159,7 +167,7 @@ The development environment (with the use of the `create-react-app` tool/workflo
 └── package.json
 ```
 
-The create-react-app workflow's production output, as shown in the gh-pages branch (tasked with the deployment of the app):
+The create-react-app workflow's production output, as shown in the `gh-pages` branch (tasked with the deployment of the app):
 
 ```
 .\
@@ -254,12 +262,17 @@ To use this project, clone it using Git:
 
 ## Features
 
-- Multiple pages (different HTML pages, normal page serving)
-- Form validation logic in the "Start Hosting" page
-- Responsive design (mobile and desktop) created with Flexbox and media queries
-- Addition/removal of CSS classes ("slide-in" animation) implemented with JavaScript
+- Single-Page Application, no page reloads, single HTML file (ReactJS)
+- Application divided into many components, of which some are used more than a single time, on different pages (ReactJS design philosophy)
+- Form validation logic, in the landing page, powered by ReactJS's state management
+- Responsive design (adaptive, mobile and desktop support) created with Flexbox and media queries
+- Usage of GitHub Actions and GitHub Pages with the create-react-app utility for a seamless workflow (transition from development stage to production/deployment stage). Upon the git push command, GitHub Actions transfers the contents of the master branch into the gh-pages branch, which then deploys the app at https://nothingnothings.github.io/PostManager
+- Addition/removal of CSS classes ("fadeEnter" animation) implemented with `react-transition-group`
+- For deployment demonstration purposes, only a single user is enabled/created on the serverside, with the credentials exemplo@exemplo.com (email field) and exemplo (password field). Furthermore, the "Posts" made by the user are reset every 1 Hour (MongoDB "Scheduled Trigger" feature)
 - Custom favicon, compatible with multiple devices
+- Simple pagination logic for the list of posts ("Next" and "Previous" buttons)
+- Usage of the `fetch()` API for communication with the Node.js (Express.js) backend, which manages the "User" and "Post" objects, stored on a MongoDB database (MongoDB Atlas service); the Node.js server and MongoDB database also handle the authentication logic (login) implemented on the app
 
 ## Inspiration
 
-Inspired by the "JavaScript - The Complete Guide" course by Maximilian Schwarzmüller.
+Inspired by the "NodeJS - The Complete Guide (MVC, REST APIs, GraphQL, Deno)" and "React - The Complete Guide (incl Hooks, React Router, Redux)" courses by Maximilian Schwarzmüller.
