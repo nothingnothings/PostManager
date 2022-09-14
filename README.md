@@ -162,30 +162,38 @@ The development environment (with the use of the `create-react-app` tool/workflo
 The Webpack workflow's production output, as shown in the `gh-pages` branch (tasked with the deployment of the app):
 
 ```
-.
+.\
 │
-├── assets\
+├── static\
 │   │
-│   ├── fonts\
-│   │   ├── UniSansHeavyCAPS.woff
-│   │   ├── UniSansHeavyCAPS.woff2
-│   │   ├── anonymousPro-Bold.ttf
-│   │   └── anonymousPro-Regular.ttf
+│   ├── css\
+│   │   ├── 1.b0103ddb.chunk.css
+│   │   ├── 1.b0103ddb.chunk.css.map
+│   │   ├── main.176757f9.chunk.css
+│   │   └── main.176757f9.chunk.css.map
 │   │
-│   └── images\
-│       ├── HostCorps.png
-│       ├── customer-1.jpg
-│       ├── customer-2.jpg
-│       ├── customer-3.jpg
-│       ├── freedom.jpg
-│       └── plan.jpg
+│   └── js\
+│       ├── 1.ab771bf3.chunk.js
+│       ├── 1.ab771bf3.chunk.js.map
+│       ├── main.8ad88ea1.chunk.js
+│       ├── main.8ad88ea1.chunk.js.map
+│       ├── runtime~main.720003f3.js
+│       └── runtime~main.720003f3.js.map
 │
 │
-├── bundle.js
-├── customers.html
+├── .nojekyll
+├── 404.html
+├── android-chrome-192x192.png
+├── android-chrome-512x512.png
+├── apple-touch-icon.png
+├── asset-manifest.json
+├── favicon-16x16.png
+├── favicon-32x32.png
+├── favicon.ico
 ├── index.html
-├── packages.html
-└── start-hosting.html
+├── manifest.json
+├── precache-manifest.b9da06879698db9688cbb05c98f3fb50.js
+└── service-worker.js
 ```
 
 ## Webpack and package.json Configuration Files
