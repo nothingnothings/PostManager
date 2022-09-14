@@ -130,7 +130,7 @@ const footer = (props) => {
           <p className="text-light mb-0 py-2 text-center">
             Built by <a 
             className="footer-link"
-            href="https://github.com/nothingnothings">Arthur Panazolo</a> in 2022
+            href="https://github.com/nothingnothings">Arthur Panazolo</a> in 2022.
           </p>
         </div>
       </div>
