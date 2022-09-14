@@ -1,5 +1,5 @@
 ![PostManager1](/snapshot/PostManager2.png)
-<br>
+<hr>
 
 ![PostManager2](/snapshot/PostManager1.png)
 
