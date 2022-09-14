@@ -100,13 +100,13 @@ const footer = (props) => {
             <p className="text-muted mb-4" style={{ cursor: 'default' }}>
               This Newsletter doesn't really work, but if you want to keep
               yourself posted about the latest in Web Development, you can
-              always check my site:
+              always check my GitHub page:
             </p>
             <div className="p-1 rounded border">
               <div className="input-group">
                 <input
                   type="email"
-                  placeholder="Placeholder"
+                  placeholder="https://github.com/nothingnothings"
                   aria-describedby="button-addon1"
                   className="form-control border-0 shadow-0"
                 ></input>
