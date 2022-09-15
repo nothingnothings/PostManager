@@ -35,8 +35,8 @@ The development environment (with the use of the `create-react-app` tool/workflo
 │
 ├── public\
 │   ├── 404.html
-│   ├── android-chrome-192x192.png
-│   ├── android-chrome-512x512.png
+│   ├── logo192.png
+│   ├── logo512.png
 │   ├── apple-touch-icon.png
 │   ├── favicon-16x16.png
 │   ├── favicon-32x32.png
@@ -192,8 +192,8 @@ The create-react-app workflow's production output, as shown in the `gh-pages` br
 │
 ├── .nojekyll
 ├── 404.html
-├── android-chrome-192x192.png
-├── android-chrome-512x512.png
+├── logo192.png
+├── logo512.png
 ├── apple-touch-icon.png
 ├── asset-manifest.json
 ├── favicon-16x16.png
