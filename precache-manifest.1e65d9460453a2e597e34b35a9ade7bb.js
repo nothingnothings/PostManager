@@ -20,7 +20,7 @@ self.__precacheManifest = [
     "url": "/PostManager/static/js/runtime~main.720003f3.js"
   },
   {
-    "revision": "264d376ec30098ce7ff542d62fa45233",
+    "revision": "3bc8976a1684f6e199dedd3c55bcb1a4",
     "url": "/PostManager/index.html"
   }
 ];
