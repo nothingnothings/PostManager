@@ -11,6 +11,11 @@ The app was bootstrapped with create-react-app and deployed with GitHub Pages, a
 
 The REST API backend portion of the app can be found [here](https://github.com/nothingnothings/PostManager-Backend).
 
+![CodeFactor Grade](https://img.shields.io/codefactor/grade/github/nothingnothings/PostManager/master?style=flat-square)
+[![HitCount](https://hits.dwyl.com/nothingnothings/PostManager.svg?style=flat-square)](http://hits.dwyl.com/nothingnothings/PostManager)
+
+
+
 ## Technologies
 
 Some of the Languages, Libraries and packages employed:
