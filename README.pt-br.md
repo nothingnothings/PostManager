@@ -5,11 +5,14 @@
 
 # PostManager
 
-Simple ReactJS app with authentication and post creation logic, connected to a Node.js (Express.js) backend, helped by a MongoDB database and hosted on the Heroku platform. The webApp can be acessed [here](https://nothingnothings.github.io/PostManager). 
+Aplicativo simples ReactJS com lógica de autenticação e criação de postagens, conectado a um backend Node.js (Express.js), auxiliado por um banco de dados MongoDB e hospedado na plataforma Heroku. A webApp pode ser acessada [aqui](https://nothingnothings.github.io/PostManager).
 
-The app was bootstrapped with create-react-app and deployed with GitHub Pages, assisted by the GitHub Actions feature.
 
-The REST API backend portion of the app can be found [here](https://github.com/nothingnothings/PostManager-Backend).
+O aplicativo foi inicializado com create-react-app e implantado com GitHub Pages, assistido pela funcionalidade GitHub Actions.
+
+
+A parte backend do aplicativo pode ser encontrada [aqui](https://github.com/nothingnothings/PostManager-Backend).
+
 
 ![CodeFactor Grade](https://img.shields.io/codefactor/grade/github/nothingnothings/PostManager/master?style=flat-square)
 [![en](https://img.shields.io/badge/lang-en-red.svg?style=flat-square)](https://github.com/nothingnothings/PostManager)
@@ -17,26 +20,26 @@ The REST API backend portion of the app can be found [here](https://github.com/n
 
 
 
+## Tecnologias
 
-## Technologies
+Algumas das linguagens, bibliotecas e pacotes empregados:
 
-Some of the Languages, Libraries and packages employed:
-
-- Node Package Manager (for bootstrapping and managing the React app)
+- Node Package Manager (para inicialização e gerenciamento do aplicativo React)
 - HTML5 (JSX)
-- CSS3 (animations, Flexbox, media queries)
-- ReactJS (JavaScript Library, app built entirely of React components; usage of "state" to manage form validation, etc.)
-- Form validation logic (state-based input validation, logic for adding and removing "touched" and "invalid" styles, etc.)
-- Responsive mobile design (sidebar, Flexbox, media queries)
-- Bootstrap (mainly the Footer component)
-- Font Awesome (Footer component's icons)
-- MongoDB (noSQL database storage solution; storage of `user` and `post` objects into collections in a remote MongoDB Atlas database)
-- Fetch API usage (for the JSON communication, requests and responses, between the frontend app and the Node.js/express.js backend targeted by it)
-- For the sending of the data of the posts to the backend, `FormData()` and `FileReader()`; JavaScript APIs/Objects used to send multipart HTTP requests (strings/text and images) to the Node.js backend, where the JSON data is separated from the image data (files chosen by the user), before being handled appropriately
+- CSS3 (animações, Flexbox, consultas de mídia)
+- ReactJS (biblioteca JavaScript, aplicativo construído inteiramente com componentes React; uso de "state" para gerenciar a validação de formulários, etc.)
+- Lógica de validação de formulários (validação de entrada baseada em estado, lógica para adicionar e remover estilos "touched" e "invalid", etc.)
+- Design responsivo para dispositivos móveis (sidebar, Flexbox, consultas de mídia)
+- Bootstrap (principalmente o componente Footer)
+- Font Awesome (ícones do componente Footer)
+- MongoDB (solução de armazenamento de banco de dados noSQL; armazenamento de objetos `user` e `post` em coleções em um banco de dados remoto MongoDB Atlas)
+- Uso da Fetch API (para a comunicação JSON, solicitações e respostas, entre o aplicativo frontend e o backend Node.js/express.js)
+- Para o envio dos dados das postagens para o backend, `FormData()` e `FileReader()`; APIs/Objetos JavaScript usados para enviar solicitações HTTP multipart (strings/texto e imagens) para o backend Node.js, onde os dados JSON são separados dos dados de imagem (arquivos escolhidos pelo usuário), antes de serem tratados adequadamente
 
-## Project Directory Structure
+## Estrutura do Diretório do Projeto
 
-The development environment (with the use of the `create-react-app` tool/workflow):, as seen in the `master` branch:
+O ambiente de desenvolvimento (com o uso da ferramenta/workflow `create-react-app`):, conforme visto na branch `master`:
+
 
 ```
 .\
@@ -176,7 +179,8 @@ The development environment (with the use of the `create-react-app` tool/workflo
 └── package.json
 ```
 
-The create-react-app workflow's production output, as shown in the `gh-pages` branch (tasked with the deployment of the app):
+O output de produção do workflow do create-react-app, conforme mostrado na branch `gh-pages` (responsável pelo deploy do aplicativo):
+
 
 ```
 .\
@@ -213,9 +217,9 @@ The create-react-app workflow's production output, as shown in the `gh-pages` br
 └── service-worker.js
 ```
 
-## Webpack and package.json Configuration Files
+## Arquivos de Configuração do Webpack e package.json
 
-The package.json file used in the project:
+O arquivo package.json usado no projeto:
 
 ```
 {
@@ -259,29 +263,32 @@ The package.json file used in the project:
 
 ```
 
-## Setup
+## Configuração
 
-To use this project, clone it using Git:
+Para usar este projeto, clone-o usando o Git:
 
-1. Run `git clone` to clone the project into your local Git repository
-2. Run `npm install` to install all dependencies (`react`, `axios`, etc)
-3. Run `npm run build` to create the production/deployment version of the app (outputted in `/build`)
-4. Serve the production files locally or on the web, with the help of a hosting provider (although great part of the app relies/depends on the backend's data, which in the case of this demo, is served by a Node.js (Express.js) server, hosted on Heroku)
-5. For the purposes of this demo, on the Home page, input the credentials `exemplo@exemplo.com` (email) and `exemplo` (password) to access the apps's functionalities (Post Viewing and Creation)
+1. Execute `git clone` para clonar o projeto em seu repositório Git local.
+2. Execute `npm install` para instalar todas as dependências (`react`, `axios`, etc).
+3. Execute `npm run build` para criar a versão de produção/implantação do aplicativo (output em `/build`).
+4. Sirva os arquivos de produção localmente ou na web, com a ajuda de um provedor de hospedagem (embora grande parte do aplicativo dependa dos dados do backend, que, neste caso, é servido por um servidor Node.js (Express.js), hospedado no Heroku).
+5. Para fins desta demonstração, na página inicial, insira as credenciais `exemplo@exemplo.com` (email) e `exemplo` (senha) para acessar as funcionalidades do aplicativo (visualização e criação de postagens).
 
-## Features
 
-- Single-Page Application, no page reloads, single HTML file (ReactJS)
-- Application divided into many components, of which some are used more than a single time, on different pages (ReactJS design philosophy)
-- Form validation logic, in the landing page, powered by ReactJS's state management
-- Responsive design (adaptive, mobile and desktop support) created with Flexbox and media queries
-- Usage of GitHub Actions and GitHub Pages with the create-react-app utility for a seamless workflow (transition from development stage to production/deployment stage). Upon the git push command, GitHub Actions transfers the contents of the master branch into the gh-pages branch, which then deploys the app at https://nothingnothings.github.io/PostManager
-- Addition/removal of CSS classes ("fadeEnter" animation) implemented with `react-transition-group`
-- For deployment demonstration purposes, only a single user is enabled/created on the serverside, with the credentials exemplo@exemplo.com (email field) and exemplo (password field). Furthermore, the "Posts" made by the user are reset every 1 Hour (MongoDB "Scheduled Trigger" feature)
-- Custom favicon, compatible with multiple devices
-- Simple pagination logic for the list of posts ("Next" and "Previous" buttons)
-- Usage of the `fetch()` API for communication with the Node.js (Express.js) backend, which manages the "User" and "Post" objects, stored on a MongoDB database (MongoDB Atlas service); the Node.js server and MongoDB database also handle the authentication logic (login) implemented on the app
+## Destaques
 
-## Inspiration
+- Aplicativo de Página Única, sem recarregamentos de página arquivo HTML único (ReactJS).
+- Aplicativo dividido em diversos componentes, dos quais alguns são usados mais de uma vez, em diferentes páginas (filosofia de design ReactJS).
+- Lógica de validação de formulários, na página inicial, integrada com a lógica de state management do ReactJS.
+- Design responsivo (adaptável, suporte a dispositivos móveis e desktops) criado com Flexbox e media queries.
+- Uso do GitHub Actions e GitHub Pages com a ferramenta `create-react-app` para um workflow contínuo (transição da fase de desenvolvimento para a fase de produção/implantação). Após o comando git push, o GitHub Actions transfere o conteúdo da branch master para a branch gh-pages, que então realiza o deploy do aplicativo em https://nothingnothings.github.io/PostManager.
+- Adição/remoção de classes CSS (animação "fadeEnter"), implementada com `react-transition-group`.
+- Para fins de demonstração de implantação, apenas um único usuário foi/é habilitado/criado no lado do servidor, com as credenciais `exemplo@exemplo.com` (campo de email) e `exemplo` (campo de senha). Além disso, os "Posts" feitos pelo usuário são redefinidos a cada hora (recurso "Scheduled Trigger" do MongoDB).
+- Favicon personalizado, compatível com múltiplos dispositivos.
+- Lógica de paginação simples para a lista de postagens (Botões "Next" e "Previous").
+- Uso da API `fetch()` para comunicação com o backend Node.js (Express.js), que gerencia os objetos "Usuário" e "Postagem", armazenados em um banco de dados MongoDB (serviço MongoDB Atlas); o servidor Node.js e o banco de dados MongoDB também lidam com a lógica de autenticação (login) implementada no aplicativo.
 
-Inspired by the "NodeJS - The Complete Guide (MVC, REST APIs, GraphQL, Deno)" and "React - The Complete Guide (incl Hooks, React Router, Redux)" courses by Maximilian Schwarzmüller.
+## Inspiração
+
+Inspirado pelos cursos "NodeJS - The Complete Guide (MVC, REST APIs, GraphQL, Deno)" e "React - The Complete Guide (incl Hooks, React Router, Redux)" de Maximilian Schwarzmüller.
+
+
