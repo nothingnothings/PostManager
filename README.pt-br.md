@@ -5,7 +5,7 @@
 
 # PostManager
 
-Aplicativo simples ReactJS com lógica de autenticação e criação de postagens, conectado a um backend Node.js (Express.js), auxiliado por um banco de dados MongoDB e hospedado na plataforma Heroku. A webApp pode ser acessada [aqui](https://nothingnothings.github.io/PostManager).
+Aplicativo simples ReactJS com lógica de autenticação e criação de postagens, conectado a um backend Node.js (Express.js), auxiliado por um banco de dados MongoDB e hospedado na plataforma Railway. A webApp pode ser acessada [aqui](https://nothingnothings.github.io/PostManager).
 
 
 O aplicativo foi inicializado com create-react-app e implantado com GitHub Pages, assistido pela funcionalidade GitHub Actions.
@@ -270,7 +270,7 @@ Para usar este projeto, clone-o usando o Git:
 1. Execute `git clone` para clonar o projeto em seu repositório Git local.
 2. Execute `npm install` para instalar todas as dependências (`react`, `axios`, etc).
 3. Execute `npm run build` para criar a versão de produção/implantação do aplicativo (output em `/build`).
-4. Sirva os arquivos de produção localmente ou na web, com a ajuda de um provedor de hospedagem (embora grande parte do aplicativo dependa dos dados do backend, que, neste caso, é servido por um servidor Node.js (Express.js), hospedado no Heroku).
+4. Sirva os arquivos de produção localmente ou na web, com a ajuda de um provedor de hospedagem (embora grande parte do aplicativo dependa dos dados do backend, que, neste caso, é servido por um servidor Node.js (Express.js), hospedado no Railway).
 5. Para fins desta demonstração, na página inicial, insira as credenciais `exemplo@exemplo.com` (email) e `exemplo` (senha) para acessar as funcionalidades do aplicativo (visualização e criação de postagens).
 
 

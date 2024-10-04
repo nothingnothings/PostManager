@@ -31,7 +31,7 @@ class Feed extends Component {
   };
 
   componentDidMount() {
-    fetch(`https://postsmanager.herokuapp.com/feed/status`, {
+    fetch(`https://postmanager-production-872c.up.railway.app/feed/status`, {
       headers: {
         Authorization: `Bearer ${this.props.token}`,
         Name: `${this.props.name}`,
@@ -69,7 +69,7 @@ class Feed extends Component {
       this.setState({ postPage: page});
     }
 
-    fetch(`https://postsmanager.herokuapp.com/feed/posts?page=${page}`, {
+    fetch(`https://postmanager-production-872c.up.railway.app/feed/posts?page=${page}`, {
       headers: {
         Authorization: `Bearer ${this.props.token}`,
         Name: `${this.props.name}`,
@@ -102,7 +102,7 @@ class Feed extends Component {
     event.preventDefault();
 
     fetch(
-      `https://postsmanager.herokuapp.com/feed/status`,
+      `https://postmanager-production-872c.up.railway.app/feed/status`,
 
       {
         method: 'POST',
@@ -160,11 +160,11 @@ class Feed extends Component {
     formData.append('image', postData.image);
     formData.append('name', this.props.name);
 
-    let url = 'https://postsmanager.herokuapp.com/feed/post';
+    let url = 'https://postmanager-production-872c.up.railway.app/feed/post';
     let method = 'POST';
 
     if (this.state.editPost) {
-      url = `https://postsmanager.herokuapp.com/feed/post/${postData.id}`;
+      url = `https://postmanager-production-872c.up.railway.app/feed/post/${postData.id}`;
       method = 'PUT';
     }
 

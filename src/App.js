@@ -86,7 +86,7 @@ class App extends Component {
     event.preventDefault();
     this.setState({ authLoading: true });
     fetch(
-      'https://postsmanager.herokuapp.com/auth/login',
+      'https://postmanager-production-872c.up.railway.app//auth/login',
 
       {
         body: JSON.stringify({
